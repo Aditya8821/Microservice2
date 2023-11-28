@@ -29,7 +29,7 @@ def calculate_price():
         return render_template('result.html', error="Failed to fetch product details from API1")
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=PORT)
+    app.run(debug=True, host='0.0.0.0', port=5001)
 
 
 # from flask import Flask, render_template, request, jsonify
