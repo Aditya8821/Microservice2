@@ -6,7 +6,7 @@
 # app = Flask(__name__)
 
 # # Use environment variables or default values
-# API1_URL = os.environ.get('API1_URL', 'http://localhost:5000')
+# API1_URL = os.environ.get('API1_URL', 'http://172.31.88.214:5000')
 # PORT = int(os.environ.get('PORT', 5001))
 
 # @app.route('/')
