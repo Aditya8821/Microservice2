@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Result</title>
+</head>
+<body>
+    <h1>Price Result</h1>
+    {% if total_price is defined %}
+        <p>Total Price: {{ total_price }}</p>
+    {% elif error is defined %}
+        <p>Error: {{ error }}</p>
+    {% endif %}
+    <br>
+    <a href="/">Back to Calculator</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+FROM python:3.8
+
+WORKDIR /app
+
+COPY price_api.py .
+COPY templates templates
+
+RUN pip install flask requests
+
+CMD ["python", "price_api.py"]
