@@ -87,7 +87,7 @@ def calculate_price():
     quantity = int(request.form['quantity'])
 
     # Make a request to the first API to get product details
-    api1_url = 'http://localhost:5000/getprice/' + product_id  # Replace with the actual IP or domain
+    api1_url = 'http://172.31.88.214:5000/getprice/' + product_id  # Replace with the actual IP or domain
     try:
         response = requests.get(api1_url)
         response.raise_for_status()  # Raise an exception for bad responses
