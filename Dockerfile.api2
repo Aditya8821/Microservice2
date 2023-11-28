@@ -7,9 +7,10 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY price_api.py .
 COPY templates templates
+COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
-RUN pip install flask requests
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Define environment variable for API1 URL (default to http://localhost:5000)
 ENV API1_URL http://localhost:5000
