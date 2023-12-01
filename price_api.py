@@ -13,7 +13,7 @@ def calculate_price():
     quantity = int(request.form['quantity'])
 
     # Make a request to the first API to get product details
-    api1_url = 'http://microservice1-service:5000/getprice/' + product_id  # Replace with the actual IP or domain or you can try by giving private IP of instance also
+    api1_url = 'http://microservice1-service/getprice/' + product_id  # Replace with the actual IP or domain or you can try by giving private IP of instance also
     try:
         response = requests.get(api1_url)
         response.raise_for_status()  # Raise an exception for bad responses
